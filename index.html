@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tetris Basic</title>
+    <!--Import font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<title id>Basic Tetris</title>
+
+<body>
+    <div>
+  <h2>Tetris </h2>
+    <button id="instructions">Instructions</button>
+    <!--Button for instructions -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>⬅️ Left Arrow & ➡️ Right Arrow: moves the
+          block to the sides<br><br>
+          ⬇️ Down Arrow: Accelerates the block's fall<br><br>
+          A & D Keys: Rotate the block <br><br> Score as many points as possible
+          by clearing horizontal lines of Blocks. <br><br> 
+          Lines are cleared when they are filled with Blocks and have no empty
+          spaces. Game over if you run out of playing field!
+        </p>
+      </div>
+    </div>
+    </div>
+    <div class="container">
+    <div id="button-container">
+     <h3>Score:<span id="score">0</span></h3>
+      <button id="start">Start</button>
+      <button id="reset">Reset</button>
+    </div>
+        <canvas id="tetris" width="240" height="400"/>
+    </div>
+    <div> 
+        <a href='https://www.freepik.com/vectors/background'>Background vector created by rawpixel.com - www.freepik.com</a>
+     </div>
+   
+      <script src="tetris.js"></script>
+</body>
+
+</html>
